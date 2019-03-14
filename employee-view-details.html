@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>View Details</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link href="css/photo.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Employee's Dashboard</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="employee-dashboard.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="employee-request-submission.html">
+                    <i class="fab fa-wpforms"></i>
+                    <span>Request Submission</span>
+                </a>
+                <a class="nav-link" href="employee-user-profile.html">
+                    <i class="fas fa-user-circle"></i>
+                    <span>User Profile</span>
+                </a>
+                <a class="nav-link" href="login.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Log out</span>
+                </a>
+            </li>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav">
+
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item active" id="view-details-tab-bar">
+                                <a class="nav-link" href="#" style="border-bottom: 3px solid grey;"
+                                    id="view-details-link">VIEW
+                                    DETAILS</a>
+                            </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <li class="nav-item" id="view-status-tab-bar">
+                                <a class="nav-link" href="#" id="view-status-link">VIEW STATUS</a>
+                            </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <li class="nav-item" id="update-tab-bar">
+                                <a class="nav-link" href="#" id="update-link">UPDATE</a>
+                            </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <li class="nav-item" id="delete-tab-bar">
+                                <a class="nav-link" href="#" id="delete-link">DELETE</a>
+                            </li>
+                        </ul>
+                    </ul>
+
+                </nav>
+                <br />
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid" id="view-details-table">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">View Request Form Details</h1>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Item</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Stapler</p>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Description</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>For work purpose</p>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Purchase Date</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>6 March 2019</p>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Remark</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Image</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="img/stapler.jpg">
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Submission Date</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>8 March 2019, 4:43PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="view-status-table" style="display: none;">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">View Request Form Status</h1>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Status</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>Pending</p>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Approved By</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Comment</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Approved Date</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid" id="update-table" style="display: none;">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Update Request Form Details</h1>
+                    </div>
+
+                    <form class="needs-validation" novalidate>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationPurchase">What did you purchase?</label>
+                            <input type="text" class="form-control" id="validationPurchase" value="Stapler" required>
+                            <div class="invalid-feedback">
+                                Please do not leave it blank.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationFor">What is it for?</label>
+                            <input type="text" class="form-control" id="validationFor" value="For work purpose"
+                                required>
+                            <div class="invalid-feedback">
+                                Please do not leave it blank.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationPurchaseDate2">Purchase Date</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="validationPurchaseDate2"
+                                    value="06/03/2019" />
+                                <div class="invalid-feedback">
+                                    Please do not leave it blank.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationRemark">Remark (Leave if blank if no remark)</label>
+                            <input type="text" class="form-control" id="validationRemark">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationImage">Image</label>
+                            <input type="button" id="takeAPhotoButton" value="Take a photo"></input> or
+                            <br />
+                            <input type="file" id="validationImage" accept="image/*" onchange="readURL(this);">
+                            <img id="testUploadImage">
+                            <div class="invalid-feedback">
+                                Please do not leave it blank.
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Update</button>
+                    </form>
+                </div>
+                <!-- /.container-fluid -->
+
+                <div class="container-fluid" id="delete-table" style="display: none;">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Withdraw Request</h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Are you sure you want to withdraw the current request?</label>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-danger" type="submit" id="deleteButton">Delete</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Dummy Website 2k19</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Take a Photo Modal-->
+    <div class="modal fade" id="takeAPhotoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="booth">
+                        <video id="video" width="380" height="300" autoplay="true"></video>
+                        <a href="#" id="capture" class="booth-capture-button">Take photo</a>
+                        <canvas id="canvas" width="380" height="300"></canvas>
+                        <img id="photo-from-employee">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="#" id="takeAPhotoOkButton">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Successful Submission Modal-->
+    <div class="modal fade" id="updateSuccessfulModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/tick.jpg" style="position:relative;left:120px;" />
+                    <h1 style="text-align: center;">Updated Successfully!</h1>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="employee-view-details.html">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal-->
+    <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "OK" below if you are ready to withdraw your current request.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-danger" href="" id="delete-confirmation-modal-ok-button">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Successful Delete Modal-->
+    <div class="modal fade" id="deleteSuccessfulModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/cross.png" style="position:relative;left:120px;" />
+                    <h1 style="text-align: center;">Deleted Successfully!</h1>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="employee-dashboard.html">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Scripts for view-details.html -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="js/employee/view-details.js"></script>
+
+</body>
+
+</html>

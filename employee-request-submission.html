@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Submission of Request Form</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link href="css/photo.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Employee's Dashboard</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="employee-dashboard.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="employee-request-submission.html">
+                    <i class="fab fa-wpforms"></i>
+                    <span>Request Submission</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="employee-user-profile.html">
+                    <i class="fas fa-user-circle"></i>
+                    <span>User Profile</span>
+                </a>
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Log out</span>
+                </a>
+            </li>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <br />
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Submission of Request Form</h1>
+                    </div>
+
+                    <form class="needs-validation" novalidate>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationPurchase">What did you purchase?</label>
+                            <input type="text" class="form-control" id="validationPurchase" required>
+                            <div class="invalid-feedback">
+                                Please do not leave it blank.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationFor">What is it for?</label>
+                            <input type="text" class="form-control" id="validationFor" required>
+                            <div class="invalid-feedback">
+                                Please do not leave it blank.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationPurchaseDate">Purchase Date</label>
+                            <div class="input-group">
+                                <input data-provide="datepicker" class="form-control" id="validationPurchaseDate"
+                                    aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please do not leave it blank.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationRemark">Remark (Leave if blank if no remark)</label>
+                            <input type="text" class="form-control" id="validationRemark">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationImage">Image</label>
+                            <input type="button" id="takeAPhotoButton" value="Take a photo"></input> or
+                            <br />
+                            <input type="file" id="validationImage" accept="image/*" onchange="readURL(this);">
+                            <img id="testUploadImage">
+                            <div class="invalid-feedback">
+                                Please do not leave it blank.
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Dummy Website 2k19</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Take a Photo Modal-->
+    <div class="modal fade" id="takeAPhotoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="booth">
+                        <video id="video" width="380" height="300" autoplay="true"></video>
+                        <a href="#" id="capture" class="booth-capture-button">Take photo</a>
+                        <canvas id="canvas" width="380" height="300"></canvas>
+                        <img id="photo-from-employee">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="#" id="takeAPhotoOkButton">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Successful Submission Modal-->
+    <div class="modal fade" id="submitSuccessfulModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/tick.jpg" style="position:relative;left:120px;" />
+                    <h1 style="text-align: center;">Submitted Successfully!</h1>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="employee-dashboard.html">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="js/employee/request-submission.js"></script>
+
+</body>
+
+</html>
