@@ -19,14 +19,20 @@
 })();
 
 let selectionList = document.querySelector('#selectionList');
+let checkboxes = document.getElementsByName('staff');
+let selectAllCheckBox = document.querySelector('#Select-all');
+let johnCheckBox = document.querySelector('#John');
+let jamesCheckBox = document.querySelector('#James');
+let markCheckBox = document.querySelector('#Mark');
 
 function selectAllFunction(source) {
-    let checkboxes = document.getElementsByName('staff');
-    let selectAllCheckBox = document.querySelector('#Select-all');
     for (var i = 0, n = checkboxes.length; i < n; i++) {
         checkboxes[i].checked = source.checked;
     }
     if (selectAllCheckBox.checked === true) {
+        selectionList.value = selectionList.value.replace('John', "");
+        selectionList.value = selectionList.value.replace('James', "");
+        selectionList.value = selectionList.value.replace('Mark', "");
         selectionList.value += 'JohnJamesMark';
     } else {
         selectionList.value = selectionList.value.replace('JohnJamesMark', "");
@@ -34,28 +40,28 @@ function selectAllFunction(source) {
 }
 
 function johnFunction() {
-    let johnCheckBox = document.querySelector('#John');
     if (johnCheckBox.checked === true) {
         selectionList.value += 'John';
     } else {
         selectionList.value = selectionList.value.replace('John', "");
+        selectAllCheckBox.checked = false;
     }
 }
 
 function jamesFunction() {
-    let jamesCheckBox = document.querySelector('#James');
     if (jamesCheckBox.checked === true) {
         selectionList.value += 'James';
     } else {
         selectionList.value = selectionList.value.replace('James', "");
+        selectAllCheckBox.checked = false;
     }
 }
 
 function markFunction() {
-    let markCheckBox = document.querySelector('#Mark');
     if (markCheckBox.checked === true) {
         selectionList.value += 'Mark';
     } else {
         selectionList.value = selectionList.value.replace('Mark', "");
+        selectAllCheckBox.checked = false;
     }
 }
