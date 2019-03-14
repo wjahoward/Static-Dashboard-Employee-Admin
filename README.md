@@ -1,4 +1,5 @@
 <h3>Brief Description of project</h3>
+<hr/>
 <ul>
   <li>This project is done using <strong>HTML, CSS and Javascript</strong>, mainly working on the <strong>front-end</strong> side (using static data), purely static web pages.</li>
   <li>The web pages are for 2 different users:</li> 
@@ -67,9 +68,37 @@
     </ul>
   <li>There are miscellaneous web pages:</li>
     <ul>
-      <li>login.html</li>
+      <li>forgot-password.html
         <ul>
-          <li>Allow user to login</li>
+          <li>Allow user (Admin or Employee) to request for change of password if user forgots own password</li>
         </ul>
+      </li>
+      <li>login.html
+        <ul>
+          <li>Allow user (Admin or Employee) to login</li>
+        </ul>
+      </li>
     </ul>
 </ul>
+<h3>Steps</h3>
+<hr/>
+<ol>
+  <li>Download the project</li>
+  <li>Launch <strong>login.html</strong> file</li>
+  <li>Credentials to log in:</li>
+    <ul>
+      <li>For <strong>Admin</strong>:
+        <ul>
+          <li>Email Address: <strong>admin@example.com</strong></li>
+          <li>Password: <strong>password</strong></li>
+        </ul>
+      </li>
+      <li>For <strong>Employee</strong>:
+        <ul>
+          <li>Email Address: <strong>employee@example.com</strong></li>
+          <li>Password: <strong>password</strong></li>
+        </ul>
+      </li>
+    </ul>
+</ol>
+
