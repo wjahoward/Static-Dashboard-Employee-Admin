@@ -83,8 +83,8 @@
 <h3>Steps</h3>
 <hr/>
 <ol>
-  <li>Download the project</li>
-  <li>Launch <strong>login.html</strong> file</li>
+  <li>Download the project.</li>
+  <li>Launch <strong>login.html</strong> file.</li>
   <li>Credentials to log in:</li>
     <ul>
       <li>For <strong>Admin</strong>:
