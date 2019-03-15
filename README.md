@@ -56,7 +56,7 @@
           </li>
           <li>employee-user-profile.html
             <ul>
-              <li>Edit own profile</li>
+              <li>Edit own profile.</li>
             </ul>
           </li>
           <li>employee-view-details.html
@@ -70,12 +70,12 @@
     <ul>
       <li>forgot-password.html
         <ul>
-          <li>Allow user (Admin or Employee) to request for change of password if user forgots own password</li>
+          <li>Allow user (Admin or Employee) to request for change of password if user forgots own password.</li>
         </ul>
       </li>
       <li>login.html
         <ul>
-          <li>Allow user (Admin or Employee) to login</li>
+          <li>Allow user (Admin or Employee) to login.</li>
         </ul>
       </li>
     </ul>
