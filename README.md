@@ -7,42 +7,39 @@
       <li>Admin</li>
         <ul>
           <li>admin-create-user.html
-            <ul>
-              <li>Create user (either Admin or Employee).</li>
-              <div class="alert alert-info">
-                 <strong>Info!</strong> Indicates a neutral informative change or action.
-              </div>
-            </ul>
+              ```
+              Create user (either Admin or Employee).
+              ```
           </li>
           <li>admin-dashboard.html
-            <ul>
-              <li>View the transactions from Employee. Able to view details of each transaction, and either approve or reject it.</li>
-            </ul>
+              ```
+              View the transactions from Employee. Able to view details of each transaction, and either approve or reject it.
+              ```
           </li>
           <li>admin-generating-report.html
-            <ul>
-              <li>Generate the report based on the <strong>approved</strong> transactions made by the Employee.</li>
-            </ul>
+              ```
+              Generate the report based on the <strong>approved</strong> transactions made by the Employee.
+              ```
           </li>
           <li>admin-user-profile.html
-            <ul>
-              <li>Edit own profile, i.e. changing password.</li>
-            </ul>
+              ```
+              Edit own profile, i.e. changing password.
+              ```
           </li>
           <li>admin-users.html
-            <ul>
-              <li>View users (Admin or Employee).</li>
-            </ul>
+              ```
+              View users (Admin or Employee).
+              ```
           </li>
           <li>admin-view-details.html
-            <ul>
-              <li>View Request Form details requested by Employee, and acknowledge the form (either approve or reject).</li>
-            </ul>
+              ```
+              View Request Form details requested by Employee, and acknowledge the form (either approve or reject).
+              ```
           </li>
           <li>admin-view-user-details.html
-            <ul>
-              <li>View details, delete and update user (Admin or Employee).</li>
-            </ul>
+              ```
+              View details, delete and update user (Admin or Employee).
+              ```
           </li>
         </ul>
       <li>Employee</li>
