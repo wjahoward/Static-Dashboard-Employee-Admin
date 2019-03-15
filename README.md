@@ -8,7 +8,7 @@
         <ul>
           <li>admin-create-user.html
             <ul>
-              <li>Create user (either Admin or Employee).</li>
+              <li>Create a user (either Admin or Employee).</li>
             </ul>
           </li>
           <li>admin-dashboard.html
@@ -23,7 +23,7 @@
           </li>
           <li>admin-user-profile.html
             <ul>
-              <li>Edit own profile, i.e. changing password.</li>
+              <li>Edit own profile, i.e. changing the password.</li>
             </ul>
           </li>
           <li>admin-users.html
@@ -51,7 +51,7 @@
           </li>
           <li>employee-request-submission-html
             <ul>
-              <li>Create request submission form for his or her purchase.</li>
+              <li>Create a request submission form for his or her purchase.</li>
             </ul>
           </li>
           <li>employee-user-profile.html
@@ -70,12 +70,12 @@
     <ul>
       <li>forgot-password.html
         <ul>
-          <li>Allow user (Admin or Employee) to request for change of password if user forgots own password.</li>
+          <li>Allow user (Admin or Employee) to request for change of password if the user forgot own password.</li>
         </ul>
       </li>
       <li>login.html
         <ul>
-          <li>Allow user (Admin or Employee) to login.</li>
+          <li>Allow user (Admin or Employee) to log in.</li>
         </ul>
       </li>
     </ul>
