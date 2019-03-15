@@ -56,7 +56,7 @@
           </li>
           <li>employee-user-profile.html
             <ul>
-              <li>Edit own profile/li>
+              <li>Edit own profile</li>
             </ul>
           </li>
           <li>employee-view-details.html
