@@ -10,9 +10,11 @@
               ```
               Create user (either Admin or Employee).
               ```
-            ```
-            Give examples
-            ```
+            Explain what these tests test and why
+
+```
+Give an example
+```
           </li>
           <li>admin-dashboard.html
               ```
