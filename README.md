@@ -7,13 +7,8 @@
       <li>Admin</li>
         <ul>
           <li>admin-create-user.html
-              ```
-              Create user (either Admin or Employee).
-              ```
-            Explain what these tests test and why
-
 ```
-Give an example
+Create user (either Admin or Employee).
 ```
           </li>
           <li>admin-dashboard.html
