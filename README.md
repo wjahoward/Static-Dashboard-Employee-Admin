@@ -7,39 +7,39 @@
       <li>Admin</li>
         <ul>
           <li>admin-create-user.html
-```
-Create user (either Admin or Employee).
-```
+            <ul>
+              <li>Create user (either Admin or Employee).</li>
+            </ul>
           </li>
           <li>admin-dashboard.html
-              ```
-              View the transactions from Employee. Able to view details of each transaction, and either approve or reject it.
-              ```
+            <ul>
+              <li>View the transactions from Employee. Able to view details of each transaction, and either approve or reject it.</li>
+            </ul>
           </li>
           <li>admin-generating-report.html
-              ```
-              Generate the report based on the <strong>approved</strong> transactions made by the Employee.
-              ```
+            <ul>
+              <li>Generate the report based on the <strong>approved</strong> transactions made by the Employee.</li>
+            </ul>
           </li>
           <li>admin-user-profile.html
-              ```
-              Edit own profile, i.e. changing password.
-              ```
+            <ul>
+              <li>Edit own profile, i.e. changing password.</li>
+            </ul>
           </li>
           <li>admin-users.html
-              ```
-              View users (Admin or Employee).
-              ```
+            <ul>
+              <li>View users (Admin or Employee).</li>
+            </ul>
           </li>
           <li>admin-view-details.html
-              ```
-              View Request Form details requested by Employee, and acknowledge the form (either approve or reject).
-              ```
+            <ul>
+              <li>View Request Form details requested by Employee, and acknowledge the form (either approve or reject).</li>
+            </ul>
           </li>
           <li>admin-view-user-details.html
-              ```
-              View details, delete and update user (Admin or Employee).
-              ```
+            <ul>
+              <li>View details, delete and update user (Admin or Employee).</li>
+            </ul>
           </li>
         </ul>
       <li>Employee</li>
@@ -101,4 +101,3 @@ Create user (either Admin or Employee).
       </li>
     </ul>
 </ol>
-
