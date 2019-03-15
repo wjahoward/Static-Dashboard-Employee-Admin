@@ -10,6 +10,9 @@
               ```
               Create user (either Admin or Employee).
               ```
+            ```
+            Give examples
+            ```
           </li>
           <li>admin-dashboard.html
               ```
