@@ -13,19 +13,24 @@ viewDetailsButtons.forEach(viewDetailsButton => {
 });
 
 function searchFunction() {
-    input = document.getElementById('searchFor');
+    input = document.querySelector('#searchFor');
     filter = input.value.toUpperCase();
-    table = document.getElementById('users-table');
-    tr = table.getElementsByTagName('tr');
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
+    table = document.querySelector('#users-table');
+    tr = table.querySelectorAll('tr');
+    for (i = 1; i < tr.length; i++) {
+        tds = tr[i].querySelectorAll("td");
+        let flag = false;
+        for (let j = 0; j < tds.length; j++) {
+            let td = tds[j];
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                flag = true;
             }
+        }
+        if (flag) {
+            tr[i].style.display = "";
+        }
+        else {
+            tr[i].style.display = "none";
         }
     }
 }
