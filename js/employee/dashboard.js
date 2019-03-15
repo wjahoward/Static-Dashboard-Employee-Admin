@@ -105,29 +105,34 @@ viewDetailsButtons.forEach(viewDetailsButton => {
 });
 
 function searchFunction() {
-    input = document.getElementById('searchFor');
+    input = document.querySelector('#searchFor');
     filter = input.value.toUpperCase();
 
     if (allTabBar.classList[1] === 'active') {
-        table = document.getElementById('all-table');
+        table = document.querySelector('#all-table');
     } else if (pendingTabBar.classList[1] === 'active') {
-        table = document.getElementById('pending-table');
+        table = document.querySelector('#pending-table');
     } else if (acceptedTabBar.classList[1] === 'active') {
-        table = document.getElementById('accepted-table');
+        table = document.querySelector('#accepted-table');
     } else if (rejectedTabBar.classList[1] === 'active') {
-        table = document.getElementById('rejected-table');
+        table = document.querySelector('#rejected-table');
     }
 
-    tr = table.getElementsByTagName('tr');
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
+    tr = table.querySelectorAll('tr');
+    for (i = 1; i < tr.length; i++) {
+        tds = tr[i].querySelectorAll("td");
+        let flag = false;
+        for (let j = 0; j < tds.length; j++) {
+            let td = tds[j];
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                flag = true;
             }
+        }
+        if (flag) {
+            tr[i].style.display = "";
+        }
+        else {
+            tr[i].style.display = "none";
         }
     }
 }

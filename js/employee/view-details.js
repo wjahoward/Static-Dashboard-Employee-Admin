@@ -91,16 +91,14 @@ deleteTabBar.onclick = () => {
 (function () {
     window.addEventListener('load', function () {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        let forms = document.getElementsByClassName('needs-validation');
+        let forms = document.querySelectorAll('.needs-validation');
         // Loop over them and prevent submission
         Array.prototype.filter.call(forms, function (form) {
             form.addEventListener('submit', function (event) {
                 if (form.checkValidity() === false) {
                     event.preventDefault();
-                    event.stopPropagation();
                 } else {
                     event.preventDefault();
-                    event.stopPropagation();
                     $('#updateSuccessfulModal').modal('show');
                 }
                 form.classList.add('was-validated');
@@ -134,16 +132,14 @@ $('#validationPurchaseDate2').daterangepicker({
     maxDate: new Date()
 });
 
+// for taking a photo
 let takeAPhotoButton = document.querySelector('#takeAPhotoButton');
 let takeAPhotoOkButton = document.querySelector('#takeAPhotoOkButton');
 
-let video = document.getElementById('video');
-let canvas = document.getElementById('canvas');
+let video = document.querySelector('#video');
+let canvas = document.querySelector('#canvas');
 let context = canvas.getContext('2d');
-let capture = document.getElementById('capture');
-let photo = document.getElementById('photo-from-employee');
-
-console.log(window);
+let capture = document.querySelector('#capture');
 
 navigator.getMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 
@@ -169,7 +165,8 @@ takeAPhotoOkButton.onclick = () => {
     $('#takeAPhotoModal').modal('hide');
 }
 
-function readURL(input) {
+// image preview
+let readURL = (input) => {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
 
