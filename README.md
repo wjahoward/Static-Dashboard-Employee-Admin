@@ -9,6 +9,9 @@
           <li>admin-create-user.html
             <ul>
               <li>Create user (either Admin or Employee).</li>
+              <div class="alert alert-info">
+                 <strong>Info!</strong> Indicates a neutral informative change or action.
+              </div>
             </ul>
           </li>
           <li>admin-dashboard.html
